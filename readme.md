@@ -1,0 +1,1 @@
+https://cookbook.openai.com/examples/parse_pdf_docs_for_rag

@@ -291,7 +291,13 @@ df = pd.read_csv(data_path)
 df["embeddings"] = df.embeddings.apply(literal_eval).apply(np.array)
 
 example_inputs = [
-    "Wer Betreut die Arbeit?",
+    "Was sind wichtige Prüfaspekte?", # S. 7
+    "Wie sollten studentische Stellungnahmen aufgebaut sein? ", # S. 8
+    "Kann ich als Biologie Chemie Lehramt Student Mitglied der Fachschaft sein? Mein Kernfach ist Biologie. Schau mal in der Satzung nach.", # S. 7 
+    "Welche Studiengänge dürfen laut Satzung in der FSI sein?",
+    "Was ist der Institutsrat?", # S. 16
+    "Nenne mir wichtige Punkte zum Thema Moodle?", # S. 19
+
 ]
 
 # Running the RAG pipeline on each example
